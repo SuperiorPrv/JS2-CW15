@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.block1{
+    background: url(/images/Rectangle\ 37.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.block1_head{
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.block1_head div{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.block1_head h1{
+    margin-left: -180px;
+    font-size: 40px;
+    color: white;
+}
+.block1_head button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+.block1_head button:hover{
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.block1_head a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+.block1_head a:hover{
+    text-decoration: underline;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.block1_body{
+    padding: 15px 50px;
+}
+.block1_body h1{
+    color: white;
+    margin: 20px 20px;
+    font-size: 67px;
+    letter-spacing: 3px;
+}
+.block1_body h2{
+    color: white;
+    margin: 20px 20px;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+.block1_body button{
+    background: none;
+    border: 2px solid white;
+    color: white;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.block1_body button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.block2{
+    padding: 0px 60px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.block2_box{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.block2_box div{
+    width: 400px;
+    height: 220px;
+}
+.block2_box div img{
+    width: 300px;
+    height: 150px;
+}
+.block2_box div p{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.block2 h1{
+    margin-bottom: 30px;
+}
+.block2 a{
+    padding: 10px 20px;
+    font-size: 17px;
+    background-color: rgb(87, 35, 0);
+    border: 2px solid rgb(87, 35, 0);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+.block2 a:hover{
+    background-color: white;
+    color: rgb(87, 35, 0);
+    transition: 0.5s;
+}
+.bagDialog{
+    margin-left: auto;
+    height: 700px;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(243, 243, 243);
+}
+.bagDialog h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card1{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.card1 img{
+    width: 160px;
+    height: 100px;
+    border-radius: 20px;
+}
+.card1 div{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.card1 div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.deleteProduct{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+.deleteProduct:hover{
+    border-radius: 50%;
+    transform: scale(1.3);
+    color: red;
+    transition: 0.5s;
+}
+.countBtn{
+    background: none;
+    border: 2px solid rgb(87, 35, 0);
+    color: rgb(87, 35, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.countBtn:hover{
+    background-color: rgb(87, 35, 0);
+    color: white;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.someblock{
+    text-align: center;
+}
+.someblock button{
+    padding: 10px 80px;
+    font-size: 19px;
+    font-weight: 600;
+    border: 2px solid rgb(87, 35, 0);
+    background-color: rgb(87, 35, 0);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.someblock button:hover{
+    background-color: white;
+    color: rgb(87, 35, 0);
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+.closeBagDialog{
+    background: none;
+    border: none;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0px 9px;
+}
+.closeBagDialog:hover{
+    color: red;
+    box-shadow: 0px 0px 15px red;
+    transform: scale(1.2);
+    transition: 0.5s;
+    border-radius: 50%;
+}

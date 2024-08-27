@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.block1_head{
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.block1_head div{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.block1_head h1{
+    margin-left: -180px;
+    font-size: 40px;
+}
+.block1_head button{
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+.block1_head button:hover{
+    scale: 1.3;
+    transition: 0.5s;
+}
+.block1_head a{
+    text-decoration: none;
+    font-size: 17px;
+    color: black;
+}
+.block1_head a:hover{
+    text-decoration: underline;
+    scale: 1.2;
+    transition: 0.5s;
+}
+.block2{
+    padding: 60px 70px;
+    background-color: rgb(214, 255, 255);
+}
+.block3{
+    padding: 40px 150px;
+}
+.block3 h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.bagDialog{
+    margin-left: auto;
+    height: 700px;
+    padding: 20px;
+    width: 300px;
+    background-color: rgb(243, 243, 243);
+}
+.bagDialog h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card1{
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+.card1 img{
+    width: 160px;
+    height: 100px;
+    border-radius: 20px;
+}
+.card1 div{
+    width: 100px;
+    margin-bottom: 10px;
+}
+.card1 div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.deleteProduct{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+.deleteProduct:hover{
+    border-radius: 50%;
+    transform: scale(1.3);
+    color: red;
+    transition: 0.5s;
+}
+.countBtn{
+    background: none;
+    border: 2px solid rgb(87, 35, 0);
+    color: rgb(87, 35, 0);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.countBtn:hover{
+    background-color: rgb(87, 35, 0);
+    color: white;
+    transform: scale(1.3);
+    transition: 0.5s;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.someblock{
+    text-align: center;
+}
+.someblock button{
+    padding: 10px 80px;
+    font-size: 19px;
+    font-weight: 600;
+    border: 2px solid rgb(87, 35, 0);
+    background-color: rgb(87, 35, 0);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.someblock button:hover{
+    background-color: white;
+    color: rgb(87, 35, 0);
+    transform: scale(1.07);
+    transition: 0.5s;
+}
+.closeBagDialog{
+    background: none;
+    border: none;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 0px 9px;
+}
+.closeBagDialog:hover{
+    color: red;
+    box-shadow: 0px 0px 15px red;
+    transform: scale(1.2);
+    transition: 0.5s;
+    border-radius: 50%;
+}

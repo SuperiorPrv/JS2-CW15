@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6k2mJYFD-xpp8ouxDkgEg6f-CYWeuwBEGEQ&s",
+      "name": "Sofa",
+      "price": "399.99",
+      "manufacturer": "IKEA",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa debitis excepturi impedit officiis sapiente dolorum officia quo reprehenderit, optio ipsum facere enim voluptate provident quis aspernatur aperiam accusantium dolores. Corrupti!"
+    },
+    {
+      "id": "2",
+      "image": "https://www.greensoul.online/cdn/shop/products/VenueStudyTable8.3.jpg?v=1672935544",
+      "name": "Study table",
+      "price": "99.99",
+      "manufacturer": "Amazon",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit libero eligendi accusamus aperiam nam odio esse laboriosam cupiditate doloremque quis consequuntur id, laudantium sunt cum natus placeat obcaecati explicabo?"
+    },
+    {
+      "id": "3",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkq5SjnCQ6IJ_FgEYSZWEYIzHFs7yudD4DoA&s",
+      "name": "Wall closet",
+      "price": "599.99",
+      "manufacturer": "AliExpress",
+      "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et accusamus dolore natus numquam facere cumque sed ab beatae! Unde ex, laudantium natus earum est et nobis impedit veniam beatae minus?"
+    },
+    {
+      "id": "4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZSJdXTzqBqJnn9aQ2d7jBZR5dbTQ2if-sg&s",
+      "name": "Bed set",
+      "price": "419.99",
+      "manufacturer": "Vitra",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe similique nisi nihil corporis laboriosam reiciendis, eaque nostrum adipisci dolores ullam sequi quis sed modi at ducimus architecto, unde aut."
+    },
+    {
+      "id": "5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKo1atZN750uN-jAZh7I6bI48pmbmpigfZTQ&s",
+      "name": "Chair set",
+      "price": "299.99",
+      "manufacturer": "TajFurn",
+      "about": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem perspiciatis porro error totam, optio impedit! Architecto soluta aliquam laborum molestias tempore placeat distinctio qui, quae autem cum nostrum, consequuntur voluptates!"
+    },
+    {
+      "id": "6",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-zdOafOPChh_EHJikjklFXkk6JPDzTUkaw&s",
+      "name": "Images set",
+      "price": "59.99",
+      "manufacturer": "Amazon",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?"
+    }
+  ],
+  "bag": [
+    {
+      "id": "4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZSJdXTzqBqJnn9aQ2d7jBZR5dbTQ2if-sg&s",
+      "name": "Bed set",
+      "price": "419.99",
+      "manufacturer": "Vitra",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe similique nisi nihil corporis laboriosam reiciendis, eaque nostrum adipisci dolores ullam sequi quis sed modi at ducimus architecto, unde aut.",
+      "count": 2
+    },
+    {
+      "id": "4",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsZSJdXTzqBqJnn9aQ2d7jBZR5dbTQ2if-sg&s",
+      "name": "Bed set",
+      "price": "419.99",
+      "manufacturer": "Vitra",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium saepe similique nisi nihil corporis laboriosam reiciendis, eaque nostrum adipisci dolores ullam sequi quis sed modi at ducimus architecto, unde aut.",
+      "count": 1
+    },
+    {
+      "id": "6",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-zdOafOPChh_EHJikjklFXkk6JPDzTUkaw&s",
+      "name": "Images set",
+      "price": "59.99",
+      "manufacturer": "Amazon",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?",
+      "count": 1
+    }
+  ]
+}
