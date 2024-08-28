@@ -8,7 +8,7 @@ const selectCompany = document.querySelector('.selectCompany');
 const priceRange = document.querySelector('.priceRange');
 const priceValue = document.querySelector('.priceValue');
 
-let atr1='',atr2='',atr3=500;
+let atr1='',atr2='',atr3=1000;
 
 searchInput.oninput=(e)=>{
     atr1 = e.target.value.trim();
