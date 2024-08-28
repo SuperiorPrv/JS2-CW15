@@ -37,8 +37,19 @@ async function PutBagData(Obj,id) {
 
 async function PostBagData(Obj) {
     try {
-        const response = await axios.post(BagAPI,Obj);
-        GetBagData();
+        const {data} = await axios.get(BagAPI);
+        let cnt=0;
+        data.forEach((e,i) => {
+            if(e.name==Obj.name) cnt++;
+        });
+        if(cnt==0)
+        {
+            const response = await axios.post(BagAPI,Obj);
+            GetBagData();
+        }
+        else{
+            alert('Product already exist in the bag');
+        }
     } catch (error) {
         console.error(error);
         
