@@ -60,6 +60,7 @@ async function VaporizeBagData() {
             }
         }
         alert("Checkouted succesfully!");
+        location.reload();
     } catch (error) {
         console.error(error);
         

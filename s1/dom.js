@@ -65,6 +65,7 @@ function DisplayBag(Data) {
         TotalPrice += e.count * e.price;
     });
     totalPrice.innerHTML = '$'+TotalPrice;
+    debugger;
 }
 
 function Display(Data) {

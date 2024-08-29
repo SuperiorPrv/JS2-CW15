@@ -83,6 +83,7 @@ body{
     text-align: center;
 }
 .right_box div:hover{
+    cursor: pointer;
     transform: scale(1.1);
     transition: 0.5s;
 }
