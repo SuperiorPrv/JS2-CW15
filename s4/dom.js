@@ -1,10 +1,16 @@
-import { PutBagData,DeleteBagData } from "./api.js";
+import { PutBagData,DeleteBagData,VaporizeBagData } from "./api.js";
 
 const bagShowButton = document.querySelector('.bagShowButton');
 const bagDialog = document.querySelector('.bagDialog');
 const closeBagDialog = document.querySelector('.closeBagDialog');
 const bag_box = document.querySelector('.bag_box');
 const totalPrice = document.querySelector('.totalPrice');
+
+const checkOut = document.querySelector('.checkOut');
+
+checkOut.onclick=()=>{
+    VaporizeBagData();
+}
 
 bagShowButton.onclick=()=>{
     bagDialog.showModal();

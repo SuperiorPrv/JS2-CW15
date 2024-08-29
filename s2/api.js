@@ -48,6 +48,24 @@ async function Sorting() {
     
 }
 
+async function VaporizeBagData() {
+    try {
+        const {data} = await axios.get(BagAPI);
+        for(let e of data){
+            try {
+                const response = await axios.delete(`${BagAPI}/${e.id}`);
+            } catch (error) {
+                console.error(error);
+                
+            }
+        }
+        alert("Checkouted succesfully!");
+    } catch (error) {
+        console.error(error);
+        
+    }
+}
+
 async function GetData() {
     try {
         const {data} = await axios.get(API);
@@ -100,4 +118,4 @@ async function GetBagData() {
     }
 }
 
-export {GetData,GetBagData,PutBagData,DeleteBagData}
+export {GetData,GetBagData,PutBagData,DeleteBagData,VaporizeBagData}

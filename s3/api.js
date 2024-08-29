@@ -15,6 +15,24 @@ async function GetData() {
     }
 }
 
+async function VaporizeBagData() {
+    try {
+        const {data} = await axios.get(BagAPI);
+        for(let e of data){
+            try {
+                const response = await axios.delete(`${BagAPI}/${e.id}`);
+            } catch (error) {
+                console.error(error);
+                
+            }
+        }
+        alert("Checkouted succesfully!");
+    } catch (error) {
+        console.error(error);
+        
+    }
+}
+
 async function DeleteBagData(id) {
     try {
         const response = await axios.delete(`${BagAPI}/${id}`);
@@ -66,4 +84,4 @@ async function GetBagData() {
     }
 }
 
-export {GetData,GetBagData,PostBagData,PutBagData,DeleteBagData}
+export {GetData,GetBagData,PostBagData,PutBagData,DeleteBagData,VaporizeBagData}
