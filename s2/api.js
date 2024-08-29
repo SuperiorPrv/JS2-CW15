@@ -51,6 +51,18 @@ async function Sorting() {
 async function GetData() {
     try {
         const {data} = await axios.get(API);
+        let st = new Set();
+        st.add("All");
+        data.forEach((e,i)=>{
+            st.add(e.manufacturer);
+        });
+        selectCompany.innerHTML = "";
+        st.forEach((e,i)=>{
+            let option = document.createElement('option');
+            option.value = e;
+            option.innerHTML = e;
+            selectCompany.appendChild(option);
+        });
         Display(data);
     } catch (error) {
         console.error(error);
