@@ -47,7 +47,42 @@
       "price": "59.99",
       "manufacturer": "Amazon",
       "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?"
+    },
+    {
+      "id": "7",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-zdOafOPChh_EHJikjklFXkk6JPDzTUkaw&s",
+      "name": "Images set",
+      "price": "99.99",
+      "manufacturer": "Tajikistan",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?"
+    },
+    {
+      "id": "8",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-zdOafOPChh_EHJikjklFXkk6JPDzTUkaw&s",
+      "name": "Images set",
+      "price": "9.99",
+      "manufacturer": "Uzbekistan",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?"
     }
   ],
-  "bag": []
+  "bag": [
+    {
+      "id": "2",
+      "image": "https://www.greensoul.online/cdn/shop/products/VenueStudyTable8.3.jpg?v=1672935544",
+      "name": "Study table",
+      "price": "99.99",
+      "manufacturer": "Amazon",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit libero eligendi accusamus aperiam nam odio esse laboriosam cupiditate doloremque quis consequuntur id, laudantium sunt cum natus placeat obcaecati explicabo?",
+      "count": 60
+    },
+    {
+      "id": "6",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz-zdOafOPChh_EHJikjklFXkk6JPDzTUkaw&s",
+      "name": "Images set",
+      "price": "59.99",
+      "manufacturer": "Amazon",
+      "about": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis eaque eius, minima assumenda earum, molestias vero dolorem perferendis tempore reprehenderit, dicta hic facilis quo rem asperiores accusamus quae? Natus?",
+      "count": 20
+    }
+  ]
 }

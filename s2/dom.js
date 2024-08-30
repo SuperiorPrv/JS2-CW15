@@ -65,7 +65,7 @@ function DisplayBag(Data) {
         bag_box.appendChild(card);
         TotalPrice += e.count * e.price;
     });
-    totalPrice.innerHTML = '$'+TotalPrice;
+    totalPrice.innerHTML = '$'+Math.round(TotalPrice);
 }
 
 function Display(Data) {

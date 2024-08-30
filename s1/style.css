@@ -5,10 +5,10 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .block1{
-    background: url(/images/Rectangle\ 37.png);
+    background: url(https://s3-alpha-sig.figma.com/img/c006/6f4c/b4e3d1753ca503c388370c56c985c7ec?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ovW8wfy95SmtI3tD-eDTFuhgDas5ZhiXgHCXok1q0BRDVt0xN5sZp91~PKBPlj8DIg8iX-dpAgY7T3W2M5-typEUhrzlgDxdH2YlnArJiCadDWfryi16~IXn9DVnSsdJ2WQYyJ0Jt1WXxII-46UPB3xC4zLYwmjyfjAtYBBu1Yn6BIsTC4vavvNaGRqxIVYK9f-QgcKip8OchmVRuFdCrj59UXVz1mPIjArlzm4eZgpeoIBGHK0bS0rOwp1bjNOgmPTuhpHYNpiJlZGYm7lhW4opaImZ7a9c6WLjk28uxvjArRHlKa1mNM9cJUtd1Q-exEKWQhMTt8RBuZXY07x8Eg__);
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: 640px;
 }
 .block1_head{
     padding: 15px 40px;
@@ -33,6 +33,7 @@ body{
     font-size: 25px;
     cursor: pointer;
     color: white;
+    position: relative;
 }
 .block1_head button:hover{
     transform: scale(1.3);
@@ -50,6 +51,7 @@ body{
 }
 .block1_body{
     padding: 15px 50px;
+    margin-left: 80px;
 }
 .block1_body h1{
     color: white;
@@ -222,4 +224,13 @@ body{
     transform: scale(1.2);
     transition: 0.5s;
     border-radius: 50%;
+}
+
+.bagLength{
+    background-color: red;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
 }

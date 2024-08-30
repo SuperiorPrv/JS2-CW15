@@ -3,6 +3,8 @@ import { Display,DisplayBag } from "./dom.js";
 const API = 'http://localhost:3000/data';
 const BagAPI = 'http://localhost:3000/bag';
 
+const bagLength = document.querySelector('.bagLength');
+
 async function GetData() {
     try {
         const {data} = await axios.get(API);
@@ -55,6 +57,11 @@ async function PutBagData(Obj,id) {
 async function GetBagData() {
     try {
         const {data} = await axios.get(BagAPI);
+        let count = 0;
+        data.forEach((e,i) => {
+            count+=e.count;
+        });
+        bagLength.innerHTML = count;
         DisplayBag(data);
     } catch (error) {
         console.error(error);

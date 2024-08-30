@@ -8,6 +8,8 @@ const selectCompany = document.querySelector('.selectCompany');
 const priceRange = document.querySelector('.priceRange');
 const priceValue = document.querySelector('.priceValue');
 
+const bagLength = document.querySelector('.bagLength');
+
 let atr1='',atr2='',atr3=1000;
 
 searchInput.oninput=(e)=>{
@@ -15,7 +17,7 @@ searchInput.oninput=(e)=>{
     Sorting();
 }
 
-selectCompany.oninput=(e)=>{
+selectCompany.onclick=(e)=>{
     if(e.target.value == 'All'){
         atr2='';
         Sorting();
@@ -112,6 +114,11 @@ async function PutBagData(Obj,id) {
 async function GetBagData() {
     try {
         const {data} = await axios.get(BagAPI);
+        let count = 0;
+        data.forEach((e,i) => {
+            count+=e.count;
+        });
+        bagLength.innerHTML = count;
         DisplayBag(data);
     } catch (error) {
         console.error(error);

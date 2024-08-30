@@ -5,6 +5,8 @@ const BagAPI = 'http://localhost:3000/bag';
 
 const id = localStorage.getItem("ProductId");
 
+const bagLength = document.querySelector('.bagLength');
+
 async function GetData() {
     try {
         const {data} = await axios.get(API+'/'+id);
@@ -58,16 +60,18 @@ async function PostBagData(Obj) {
     try {
         const {data} = await axios.get(BagAPI);
         let cnt=0;
-        data.forEach((e,i) => {
-            if(e.name==Obj.name) cnt++;
-        });
+        for(let e of data){
+            if(e.id==Obj.id) 
+            {
+                cnt++;
+                e.count++;
+                PutBagData(e,e.id);
+            }
+        };
         if(cnt==0)
         {
             const response = await axios.post(BagAPI,Obj);
             GetBagData();
-        }
-        else{
-            alert('Product already exist in the bag');
         }
     } catch (error) {
         console.error(error);
@@ -78,6 +82,11 @@ async function PostBagData(Obj) {
 async function GetBagData() {
     try {
         const {data} = await axios.get(BagAPI);
+        let count = 0;
+        data.forEach((e,i) => {
+            count+=e.count;
+        });
+        bagLength.innerHTML = count;
         DisplayBag(data);
     } catch (error) {
         console.error(error);
