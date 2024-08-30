@@ -16,8 +16,25 @@
                 <a href="/aboutComfy.html">About</a>
             </div>
             <h1>comfy</h1>
-            <button class="bagShowButton"><i class="fa-solid fa-cart-shopping"></i><span class="bagLength"></span></button>
+            <div class="">
+                <button class="logInAdmin">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="bagShowButton">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="bagLength"></span>
+                </button>
+            </div>
         </div>
+        <dialog class="logInDialog">
+            <button class="closeLogInDialog">x</button>
+            <h1>Log in to Admin page</h1>
+            <form action="" class="logInForm">
+                <input type="text" name="name" id="" placeholder="Name:">
+                <input type="password" name="password" id="" placeholder="Password:">
+                <button type="submit">Log In</button>
+            </form>
+        </dialog>
         <dialog class="bagDialog">
             <button class="closeBagDialog">X</button>
             <h1 class="yourbag">Your Bag</h1>

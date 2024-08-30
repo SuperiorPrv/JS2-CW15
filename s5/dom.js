@@ -1,35 +1,44 @@
-import { PutBagData,DeleteBagData,VaporizeBagData } from "./api.js";
+import { PutBagData,DeleteBagData,VaporizeBagData, PostData } from "./api.js";
 
-const block2_box = document.querySelector('.block2_box');
+const right_box  = document.querySelector('.right_box');
 const bagShowButton = document.querySelector('.bagShowButton');
 const bagDialog = document.querySelector('.bagDialog');
 const closeBagDialog = document.querySelector('.closeBagDialog');
 const bag_box = document.querySelector('.bag_box');
 const totalPrice = document.querySelector('.totalPrice');
+
 const checkOut = document.querySelector('.checkOut');
 
-const logInAdmin = document.querySelector('.logInAdmin');
-const logInDialog = document.querySelector('.logInDialog');
-const logInForm = document.querySelector('.logInForm');
-const closeLogInDialog = document.querySelector('.closeLogInDialog');
+const addProductButton = document.querySelector('.addProductButton');
+const addProductDialog = document.querySelector('.addProductDialog');
+const addProductForm = document.querySelector('.addProductForm');
+const closeAddProductDialog = document.querySelector('.closeAddProductDialog');
 
-logInAdmin.onclick=()=>{
-    logInDialog.showModal();
+closeAddProductDialog.onclick=()=>{
+    addProductDialog.close();
 }
 
-logInForm.onsubmit=(e)=>{
+addProductForm.onsubmit=(e)=>{
     e.preventDefault();
-    if(logInForm.name.value.trim()!="Parviz" || logInForm.password.value!="15041912"){
-        alert("Wrong username or password!");
-        logInForm.reset();
+    if(addProductForm.name.value.trim()=='' || addProductForm.manufacturer.value.trim()=="" || addProductForm.price.value.trim()=='' || addProductForm.image.value.trim()=='' || addProductForm.about.value.trim()==""){
+        alert("Please fill all fields!");
     }
     else{
-        window.location.href = "adminpage.html";
+        let product = {
+            name: addProductForm.name.value,
+            manufacturer: addProductForm.manufacturer.value,
+            price: (addProductForm.price.value).toString(),
+            image: addProductForm.image.value,
+            about: addProductForm.about.value
+        };
+        PostData(product);
+        addProductDialog.close();
+        addProductForm.reset();
     }
 }
 
-closeLogInDialog.onclick=()=>{
-    logInDialog.close();
+addProductButton.onclick=()=>{
+    addProductDialog.showModal();
 }
 
 checkOut.onclick=()=>{
@@ -92,12 +101,8 @@ function DisplayBag(Data) {
 }
 
 function Display(Data) {
-    let cnt=0;
-    block2_box.innerHTML = '';
+    right_box.innerHTML = '';
     Data.forEach((e,i) => {
-        if(cnt==3){
-            return;
-        }
         let card = document.createElement('div');
         let image = document.createElement('img');
         let name = document.createElement('p');
@@ -106,8 +111,11 @@ function Display(Data) {
         name.innerHTML = e.name;
         price.innerHTML = '$'+e.price;
         card.append(image,name,price);
-        block2_box.appendChild(card);
-        cnt++;
+        card.onclick=()=>{
+            localStorage.setItem('ProductId',e.id);
+            window.location.href = 'about1.html';
+        }
+        right_box.appendChild(card);
     });
 }
 

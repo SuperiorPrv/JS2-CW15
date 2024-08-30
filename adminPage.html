@@ -3,37 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/s2/style.css">
+    <link rel="stylesheet" href="/s5/style.css">
     <link rel="stylesheet" href="/fontawesome-free-6.5.2-web/css/all.css">
     <title>Document</title>
 </head>
 <body>
     <div class="block1_head">
         <div class="">
-            <a href="/index.html">Home</a>
-            <a href="/product.html">Product</a>
-            <a href="/aboutComfy.html">About</a>
+            <a href="/index.html">Log Out</a>
         </div>
         <h1>comfy</h1>
-        <div class="">
-            <button class="logInAdmin">
-                <i class="fa-solid fa-user"></i>
-            </button>
-            <button class="bagShowButton">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <span class="bagLength"></span>
-            </button>
-        </div>
+        <button class="bagShowButton"><i class="fa-solid fa-cart-shopping"></i><span class="bagLength"></span></button>
     </div>
-    <dialog class="logInDialog">
-        <button class="closeLogInDialog">x</button>
-        <h1>Log in to Admin page</h1>
-        <form action="" class="logInForm">
-            <input type="text" name="name" id="" placeholder="Name:">
-            <input type="password" name="password" id="" placeholder="Password:">
-            <button type="submit">Log In</button>
-        </form>
-    </dialog>
     <dialog class="bagDialog">
         <button class="closeBagDialog">X</button>
         <h1 class="yourbag">Your Bag</h1>
@@ -54,6 +35,7 @@
     <div class="block3">
         <div class="left">
             <input type="search" name="" id="" class="searchInput" placeholder="Search:">
+            <button class="addProductButton">ADD NEW</button>
             <h2>Company</h2>
             <div name="" id="" class="selectCompany">
                 <option value="All">All</option>
@@ -68,7 +50,19 @@
         </div>
         <div class="right_box"></div>
     </div>
+    <dialog class="addProductDialog">
+        <button class="closeAddProductDialog">x</button>
+        <form action="" class="addProductForm">
+            <h1>Add new product</h1>
+            <input type="text" name="name" id="" placeholder="Product name:">
+            <input type="text" name="manufacturer" id="" placeholder="Product manufacturer:">
+            <input type="text" name="price" id="" placeholder="Product price:">
+            <input type="url" name="image" id="" placeholder="Product's image URL:">
+            <input type="text" name="about" id="" placeholder="About product:">
+            <button type="submit">Save</button>
+        </form>
+    </dialog>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="/s2/main.js"></script>
+    <script type="module" src="/s5/main.js"></script>
 </body>
 </html>

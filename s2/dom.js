@@ -9,6 +9,31 @@ const totalPrice = document.querySelector('.totalPrice');
 
 const checkOut = document.querySelector('.checkOut');
 
+const logInAdmin = document.querySelector('.logInAdmin');
+const logInDialog = document.querySelector('.logInDialog');
+const logInForm = document.querySelector('.logInForm');
+const closeLogInDialog = document.querySelector('.closeLogInDialog');
+
+logInAdmin.onclick=()=>{
+    logInDialog.showModal();
+}
+
+logInForm.onsubmit=(e)=>{
+    e.preventDefault();
+    if(logInForm.name.value.trim()!="Parviz" || logInForm.password.value!="15041912"){
+        alert("Wrong username or password!");
+        logInForm.reset();
+    }
+    else{
+        window.location.href = "adminpage.html";
+    }
+}
+
+closeLogInDialog.onclick=()=>{
+    logInDialog.close();
+}
+
+
 checkOut.onclick=()=>{
     VaporizeBagData();
 }
